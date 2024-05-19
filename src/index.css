@@ -1,0 +1,162 @@
+body{
+  background-color: #222;
+}
+
+
+/* Header Styles */
+header {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 20px;
+  text-align: center;
+  width: auto;
+}
+
+
+/* Main Content Styles */
+main {
+  width: 70%; /* Set fixed width */
+  padding: 20px;
+  background-color: #222; /* Dark background color */
+  color: #fff; /* White text color */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  margin: 0 auto; /* Center the container horizontally */
+  text-align: center;
+}
+
+
+/* Todo List Styles */
+ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px; /* Space between list items */
+  background-color: #333; /* Darker background color for list items */
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+li:hover {
+   /* Space between list items */
+  background-color: #444; 
+}
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+  margin-right: 15px; /* Space between checkbox and label */
+  transform: scale(1.5); /* Increase checkbox size */
+}
+
+label {
+  text-align: center;
+  flex-grow: 1; /* Take up remaining space */
+  /* Adjust label color for better visibility on dark background */
+  color: #fff;
+}
+
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.item svg{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+.item svg:focus,
+.item svg:hover{
+  color: red;
+}
+
+
+.addForm {
+    margin: 50px ;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* List item styles */
+.todoItem {
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todoItem p {
+    margin: 0;
+}
+
+.todoItem button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.todoItem button:hover {
+    color: #f00;
+}
+
+.searchItem{
+  text-align: center;
+
+}
+
+.count{
+  color: white;
+  margin-top: 0px;
+}

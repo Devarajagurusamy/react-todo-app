@@ -2,16 +2,21 @@ import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
 import AddItem from "./AddItem";
-import SearchItem from "./SearchItem";
+// import SearchItem from "./SearchItem";
 
 import {useState} from 'react'; 
 
 
-
-
 function App() {
+  const initialItems = [
+    { id: 1, item: 'Buy groceries', checked: false },
+    { id: 2, item: 'Walk the dog', checked: true },
+    { id: 3, item: 'Read a book', checked: false }
+  ];
 
-  const [items, setItems]=useState(JSON.parse(localStorage.getItem('todo_list')));
+  const [items, setItems] = useState(
+    JSON.parse(localStorage.getItem('todo_list')) || initialItems
+  );
 
   const [newItem, setNewItem] = useState('')
 
